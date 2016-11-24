@@ -1,11 +1,11 @@
-// src/index.ts
-
 import React, { Component } from 'react';
 import {
     StyleSheet,
     Text,
     View
 } from 'react-native';
+
+import Child from './child.tsx';
 
 interface Props {
 
@@ -22,6 +22,7 @@ export default class App extends Component<Props, State> {
                 <Text style={styles.text}>
                     Welcome to React Native!
                 </Text>
+                <Child />
             </View>
         );
     }
